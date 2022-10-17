@@ -434,6 +434,7 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Texture (Mask)          | T_         | _M         |                                  |
 | Texture (Specular)      | T_         | _S         |                                  |
 | Texture (Metallic)      | T_         | _M         |                                  |
+| Texture (Rough/Metallic/AO) | T_     | _RMA       | Combined texture                 | 
 | Texture (Packed)        | T_         | _*         | See notes below about [packing](#anc-textures-packing). |
 | Texture Cube            | TC_        |            |                                  |
 | Media Texture           | MT_        |            |                                  |
