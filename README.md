@@ -400,7 +400,8 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Structure               | F or S     |            | No underscore.                   |
 | Tutorial Blueprint      | TBP_       |            |                                  |
 | Widget Blueprint        | WBP_       |            |                                  |
-| Tweakable Blueprint     | *          | _T         | Child class for tweaking. Prefix is the same as its base class. |
+| Tweakable Blueprint     | BP_        | _T         | Child class for tweaking. Prefix is the same as its base class. Create _T child classes for high-traffic BPs |
+| Ability Blueprint       | BP_        | Ability    |                                  |
 
 <a name="anc-materials"></a>
 <a name="1.2.5"></a>
@@ -536,7 +537,9 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
-| Particle System         | PS_        |            |                                  |
+| Niagara System          | NS_        |            |                                  |
+| Niagara Emitter         | NE_        |            |                                  |
+| Niagara Module Script   | NMS_       |            |                                  |
 | Material (Post Process) | PP_        |            |                                  |
 
 **[⬆ Back to Top](#table-of-contents)**
