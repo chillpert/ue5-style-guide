@@ -400,7 +400,7 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Structure               | F or S     |            | No underscore.                   |
 | Tutorial Blueprint      | TBP_       |            |                                  |
 | Widget Blueprint        | WBP_       |            |                                  |
-| Tweakable Blueprint     | BP_        | _T         | Child class for tweaking. Prefix is the same as its base class. Create _T child classes for high-traffic BPs |
+| Tweakable Blueprint     | BP_        | _T         | These should expose everything game designers can tweak. Use them primarily for high-traffic BP classes. |
 | Ability Blueprint       | BP_        | Ability    |                                  |
 
 <a name="anc-materials"></a>
