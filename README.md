@@ -112,9 +112,6 @@
   - [6.1 No Errors Or Warnings](#levels-no-errors-or-warnings)
   - [6.2 Lighting Should Be Built](#levels-lighting-should-be-built)
   - [6.3 No Player Visible Z Fighting](#levels-no-visible-z-fighting)
-  - [6.4 Marketplace Specific Rules](#levels-mp-rules)
-    - [6.4.1 Overview Level](#levels-mp-rules-overview)
-    - [6.4.2 Demo Level](#levels-mp-rules-demo)
 - [7. Textures](#textures)
   - [7.1 Dimensions Are Powers of 2](#textures-dimensions)
   - [7.2 Texture Density Should Be Uniform](#textures-density)
@@ -1340,34 +1337,7 @@ It is normal during development for levels to occasionally not have lighting bui
 
 Levels should not have any [z-fighting](https://en.wikipedia.org/wiki/Z-fighting) in all areas visible to the player.
 
-<a name="6.4"></a>
-<a name="levels-mp-rules"></a>
-### 6.4 Marketplace Specific Rules
-
-If a project is to be sold on the UE4 Marketplace, it must follow these rules.
-
-<a name="6.4.1"></a>
-<a name="levels-mp-rules-overview"></a>
-#### 6.4.1 Overview Level
-
-If your project contains assets that should be visualized or demoed, you must have a map within your project that contains the name "Overview".
-
-This overview map, if it is visualizing assets, should be set up according to [Epic's guidelines](http://help.epicgames.com/customer/en/portal/articles/2592186-marketplace-submission-guidelines-preparing-your-assets#Required%20Levels%20and%20Maps).
-
-For example, `InteractionComponent_Overview`.
-
-<a name="6.4.2"></a>
-<a name="levels-mp-rules-demo"></a>
-#### 6.4.2 Demo Level
-
-If your project contains assets that should be demoed or come with some sort of tutorial, you must have a map within your project that contains the name "Demo". This level should also contain documentation within it in some form that illustrates how to use your project. See Epic's Content Examples project for good examples on how to do this.
-
-If your project is a gameplay mechanic or other form of system as opposed to an art pack, this can be the same as your "Overview" map.
-
-For example, `InteractionComponent_Overview_Demo`, `ExplosionKit_Demo`.
-
 **[⬆ Back to Top](#table-of-contents)**
-
 
 <a name="7"></a>
 <a name="textures"></a>
@@ -1404,26 +1374,3 @@ No texture should have a dimension that exceeds 8192 in size, unless you have a 
 Every texture has a Texture Group property used for LODing, and this should be set correctly based on its use. For example, all UI textures should belong in the UI texture group.
 
 **[⬆ Back to Top](#table-of-contents)**
-
-
-## Major Contributors
-
-* [Michael Allar](http://allarsblog.com): [GitHub](https://github.com/Allar), [Twitter](https://twitter.com/michaelallar)
-* [CosmoMyzrailGorynych](https://github.com/CosmoMyzrailGorynych)
-* [billymcguffin](https://github.com/billymcguffin)
-* [akenatsu](https://github.com/akenatsu)
-
-## License
-
-Copyright (c) 2016 Gamemakin LLC
-
-See [LICENSE](/LICENSE)
-
-**[⬆ Back to Top](#table-of-contents)**
-
-
-## Amendments
-
-We encourage you to fork this guide and change the rules to fit your team's style guide. Below, you may list some amendments to the style guide. This allows you to periodically update your style guide without having to deal with merge conflicts.
-
-# };
